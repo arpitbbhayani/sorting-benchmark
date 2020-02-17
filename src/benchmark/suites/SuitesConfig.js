@@ -7,18 +7,20 @@ const MergeSort = require("../algorithms/MergeSort");
 const QuickSort = require("../algorithms/QuickSort");
 const QuickSort3Way = require("../algorithms/QuickSort3Way");
 const StdSort = require("../algorithms/StdSort");
+const FlashSort = require("../algorithms/FlashSort");
 
 const slowSorts = [
-    SelectionSort.sort,
-    InsertionSort.sort
+    // SelectionSort.sort,
+    // InsertionSort.sort
 ];
 
 const fastSorts = [
-    ShellSort.sort,
-    MergeSort.sort,
+    // ShellSort.sort,
+    // MergeSort.sort,
     QuickSort.sort,
-    QuickSort3Way.sort,
-    StdSort.sort
+    FlashSort.sort,
+    // QuickSort3Way.sort,
+    // StdSort.sort
 ];
 
 const allSorts = slowSorts.concat(fastSorts);
