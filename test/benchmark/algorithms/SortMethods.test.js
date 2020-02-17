@@ -6,6 +6,7 @@ const QuickSort3Way = require("../../../src/benchmark/algorithms/QuickSort3Way")
 const SelectionSort = require("../../../src/benchmark/algorithms/SelectionSort");
 const ShellSort = require("../../../src/benchmark/algorithms/ShellSort");
 const StdSort = require("../../../src/benchmark/algorithms/StdSort");
+const FlashSort = require("../../../src/benchmark/algorithms/FlashSort");
 
 const sortMethods = [
     InsertionSort.sort,
@@ -14,7 +15,8 @@ const sortMethods = [
     QuickSort3Way.sort,
     SelectionSort.sort,
     ShellSort.sort,
-    StdSort.sort
+    StdSort.sort,
+    FlashSort.sort,
 ];
 
 sortMethods.forEach((sortMethod) => {
